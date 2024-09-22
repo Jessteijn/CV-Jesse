@@ -1,29 +1,20 @@
+import React from 'react';
 import Typist from 'react-typist';
+import styles from './HeaderTitle.module.scss';
 const cursor = {
     element: '_',
     hideWhenDone: true,
     hideWhenDoneDelay: 0,
 }
 
-export default ({color}) => (
-    <div className="is-hidden-touch">
+const HeaderTitle = ({color}) => (
+    <div className={`is-hidden-touch ${styles.title}`} style={{color}}>
         <Typist cursor={cursor}>
-            I'm <span>Nut</span>tawut
+            I&apos;m <span>Jesse</span>
         </Typist>
-        <style jsx>{`
-            div {
-                color: ${color};
-                font-size: 8em;
-                font-weight: bold;
-            }
-            span {
-                color: #c0392b;
-            }
-            @media screen and ( max-height: 690px ) {
-                div {
-                    display: none;
-                }
-            }
-        `}</style>
     </div> 
-)
+);
+
+HeaderTitle.displayName = 'HeaderTitle';
+
+export default HeaderTitle;

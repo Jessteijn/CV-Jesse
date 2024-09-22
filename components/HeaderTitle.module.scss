@@ -1,0 +1,14 @@
+.title {
+    font-size: 8em;
+    font-weight: bold;
+
+    span {
+        color: #c0392b;
+    }
+}
+
+@media screen and ( max-height: 690px ) {
+    .title {
+        display: none;
+    }
+}

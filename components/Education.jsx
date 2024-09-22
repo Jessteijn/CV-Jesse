@@ -12,14 +12,14 @@ export default class Education extends React.Component {
                     <div className="container">
                         <Item 
                             time="2014 - 2017 (B.Sc.)"
-                            name="King Mongkut's Institute of Technology Ladkrabang (KMITL)"
-                            major="Computer Science"
+                            name="TU Delft"
+                            major="Electrical Engineering"
                             gpa="?"
                             color="#2ecc71"
                         />
                         <Item 
                             time="2008 - 2013 (High School)"
-                            name="Phanatpitayakarn School"
+                            name="ISW Gasthuislaan"
                             gpa="?"
                             color="#3498db"
                         />
