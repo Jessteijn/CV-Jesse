@@ -21,11 +21,11 @@ export default class Index extends React.Component {
         if (this.state.mounted) {
             return (
                 <main>
-                   <Header />
-                   <About />
-                   <Experiences />
-                   <Education />
-                   <Skills />
+                    <Header />
+                    <About />
+                    <Experiences />
+                    <Education />
+                    <Skills />
                 </main>
             )
         } else {
