@@ -1,42 +1,33 @@
+import Image from 'next/image'
 import React from 'react'
+import styles from './AboutInterest.module.scss'
 
 export default class AboutInterest extends React.Component {
     render() {
-        let items = ['Coding', 'Sining', 'Taking Photo', 'Reading']
+        let items = ['Coding', 'Photo', 'Reading']
         return (
             <div>
-                <div className="columns topic">
+                <div className={`columns ${styles.topic}`}>
                     <div className="column has-text-left is-6 is-offset-3 is-10-mobile is-offset-1-mobile">
                         My Interests
                     </div> 
                 </div> 
-                <div className="columns item">
+                <div className={`columns ${styles.item}`}>
                     <div className="column is-6 is-offset-3 is-8-mobile is-offset-2-mobile">
                         {
                             items.map((item, index) =>
-                                <img key={index}
-                                    src={'/images/interest-' + (index+1) + '.svg'} 
-                                    title={item} />
+                                <Image key={index}
+                                    src={'/images/interest-' + (item) + '.svg'}
+                                    title={item}
+                                    alt={item}
+                                    height="80"
+                                    width="80"
+                                    className={styles.img}/>
                             )
                         }
                         
                     </div> 
                 </div>
-                <style jsx>{`
-                    .topic {
-                        font-weight: bold;
-                        color: #ffcc00;
-                        font-size: 1.2em;
-                    }
-                    .item img {
-                        margin: 0 30px;
-                        height: 80px;
-                        transition: all .2s ease-in-out;
-                    }
-                    .item img:hover {
-                        transform: scale(1.5); 
-                    }
-                `}</style>
             </div>
             
         )

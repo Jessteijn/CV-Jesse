@@ -1,0 +1,33 @@
+.wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #34495e;
+    color: #ffffff;
+    font-size: 1.3em;
+
+    dl > dt {
+        color: #ffcc00;
+        font-weight: bold;
+    }
+
+    dl > dd {
+        margin-bottom: 30px;
+    }
+}
+
+
+.mascot {
+    margin-left: 20px;
+    width: 180px;
+}
+
+.detail {
+    font-size: 0.95em;
+
+    b {
+        color: #F1A9A0;
+    }
+    i {
+        color: #00E640;
+    }
+}
