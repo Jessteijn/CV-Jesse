@@ -25,7 +25,7 @@
 }
 @-webkit-keyframes flip {
     from {
-        transform: rotateY(180deg) scale(0);
+        transform: rotateY(360deg) scale(0);
     }
     to {
         transform: rotateY(0deg) scale(1);
@@ -33,7 +33,7 @@
 }
 @keyframes flip {
     from {
-        transform: rotateY(180deg) scale(0);
+        transform: rotateY(360deg) scale(0);
     }
     to {
         transform: rotateY(0deg) scale(1);

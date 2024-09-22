@@ -1,5 +1,5 @@
 import React from 'react';
-import Typist from 'react-typist';
+import Typist from 'react-typist-component';
 import styles from './HeaderTitle.module.scss';
 const cursor = {
     element: '_',
@@ -9,7 +9,7 @@ const cursor = {
 
 const HeaderTitle = ({color}) => (
     <div className={`is-hidden-touch ${styles.title}`} style={{color}}>
-        <Typist cursor={cursor}>
+        <Typist cursor={<span className='cursor'>_</span>} hideCursorWhenDone>
             I&apos;m <span>Jesse</span>
         </Typist>
     </div> 

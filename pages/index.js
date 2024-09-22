@@ -26,11 +26,6 @@ export default class Index extends React.Component {
                    <Experiences />
                    <Education />
                    <Skills />
-                   <style jsx global>{`
-                        body {
-                            font-family: 'Questrial', sans-serif;
-                        }
-                    `}</style>
                 </main>
             )
         } else {
