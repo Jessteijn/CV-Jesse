@@ -4,7 +4,7 @@ import styles from './AboutInterest.module.scss'
 
 export default class AboutInterest extends React.Component {
     render() {
-        let items = ['Coding', 'Photo', 'Reading']
+        let items = ['Coding', 'Reading']
         return (
             <div>
                 <div className={`columns ${styles.topic}`}>

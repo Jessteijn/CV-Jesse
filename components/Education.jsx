@@ -11,16 +11,16 @@ export default class Education extends React.Component {
                     <Title title="Education" color='#ffffff'/>
                     <div className="container">
                         <Item 
-                            time="2014 - 2017 (B.Sc.)"
+                            time="2020 - Now (B.Sc.)"
                             name="TU Delft"
                             major="Electrical Engineering"
-                            gpa="?"
+                            gpa="7.8"
                             color="#2ecc71"
                         />
                         <Item 
-                            time="2008 - 2013 (High School)"
+                            time="2014 - 2020 (High School)"
                             name="ISW Gasthuislaan"
-                            gpa="?"
+                            gpa="7"
                             color="#3498db"
                         />
                     </div>
