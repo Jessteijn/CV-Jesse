@@ -24,8 +24,8 @@ export default class Index extends React.Component {
           <Header />
           <About />
           <Experiences />
-          {/* <Education />
-          <Skills /> */}
+          <Education />
+          <Skills />
         </main>
       );
     } else {

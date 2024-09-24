@@ -39,8 +39,8 @@ export default class About extends React.Component {
               website. I am a 22 year old student from the Netherlands.
             </div>
           </div>
-          {/* <Interersts /> */}
         </div>
+        <Interersts />
       </section>
     );
   }

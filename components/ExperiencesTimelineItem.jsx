@@ -13,14 +13,16 @@ export default class ExperiencesTimelineItem extends React.Component {
               className={`${styles.circle} is-hidden-mobile`}
               style={{ backgroundColor: color }}
             ></div>
-            <div className={`column ${styles.left} is-6 has-text-right`}>
+            <div
+              className={`column ${styles.left} is-6 has-text-right has-text-centered-mobile`}
+            >
               <div
-                className={`${styles.arrow} ${styles["arrow-right"]}`}
+                className={`${styles.arrow} ${styles["arrow-right"]} is-hidden-mobile`}
                 style={{ borderLeftColor: color }}
               ></div>
               <div
                 className={`${styles.detail} ${styles["detail-left"]}`}
-                style={{ borderRightColor: color }}
+                style={{ borderRightColor: color, borderTopColor: color }}
               >
                 <p className="is-hidden-tablet">{time}</p>
                 {children}
@@ -39,14 +41,16 @@ export default class ExperiencesTimelineItem extends React.Component {
             <div className="column is-6 has-text-right is-hidden-mobile">
               <div className={styles.time}>{time}</div>
             </div>
-            <div className={`column ${styles.right} is-6 has-text-left`}>
+            <div
+              className={`column ${styles.right} is-6 has-text-left has-text-centered-mobile`}
+            >
               <div
-                className={`${styles.arrow} ${styles["arrow-left"]}`}
+                className={`${styles.arrow} ${styles["arrow-left"]} is-hidden-mobile`}
                 style={{ borderRightColor: color }}
               ></div>
               <div
                 className={`${styles.detail} ${styles["detail-right"]}`}
-                style={{ borderLeftColor: color }}
+                style={{ borderLeftColor: color, borderTopColor: color }}
               >
                 <p className="is-hidden-tablet">{time}</p>
                 {children}

@@ -4,6 +4,7 @@
   background: #bdc3c7;
   color: #333333;
   font-size: 1.3em;
+  overflow-x: hidden;
 }
 
 .container {
@@ -14,7 +15,7 @@
   p {
     font-size: 0.8em;
   }
-  i.position {
-    color: #c0392b;
+  i {
+    color: #87190d;
   }
 }
