@@ -1,21 +1,21 @@
 .title {
-    font-size: 8em;
-    font-weight: bold;
+  font-size: 8em;
+  font-weight: bold;
 }
 
 .name {
-    color: #c42b1a;
+  color: #c42b1a;
 }
 
-
-@media screen and ( max-height: 690px ) {
-    .title {
-        display: none;
-    }
+@media screen and (max-height: 690px) {
+  .title {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 600px) { /* Adjust the max-width as needed */
-    .title .im {
-        display: none;
-    }
+@media screen and (max-width: 600px) {
+  /* Adjust the max-width as needed */
+  .title .im {
+    display: none;
+  }
 }

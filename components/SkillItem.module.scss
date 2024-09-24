@@ -1,33 +1,33 @@
 /* SkillItem.module.scss */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .progressBarContainer {
-    width: 80px;
-    height: 80px;
-    position: relative;
-    transition: transform 0.5s ease-in-out;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
 }
 
 .imageContainer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
 }
 
 .progressBarContainer:hover .imageContainer {
-    transform: translate(-50%, -50%) scale(1.3) rotate(-720deg);
+  transform: translate(-50%, -50%) scale(1.3) rotate(-720deg);
 }
 
 .progressBarContainer:hover {
-    transform: rotate(360deg) scale(1.4);
+  transform: rotate(360deg) scale(1.4);
 }

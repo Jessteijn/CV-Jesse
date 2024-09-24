@@ -21,9 +21,12 @@ const ParticlesBackground = () => {
     console.log(container);
   };
 
-  const options = useMemo(() => ({
-    preset: "fire",
-  }), []);
+  const options = useMemo(
+    () => ({
+      preset: "fire",
+    }),
+    []
+  );
 
   if (init) {
     return (
