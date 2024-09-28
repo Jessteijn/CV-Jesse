@@ -33,7 +33,7 @@ export default function ParticlesBackground() {
     return (
       <Particles
         id="tsparticles"
-        className="-z-1 fixed left-0 top-0 h-full w-full"
+        className="fixed inset-0 -z-10 h-full w-full"
         particlesLoaded={particlesLoaded}
         options={options}
       />

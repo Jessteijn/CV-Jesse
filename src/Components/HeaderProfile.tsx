@@ -12,7 +12,7 @@ export default class HeaderProfile extends React.Component {
             width="300"
             height="300"
             alt="Profile picture"
-            className="animate-flip hover:rotate-y-180 transition-transform duration-1000 ease-in-out"
+            className="animate-flip transition-transform duration-1000 hover:rotate-y-180"
           />
         </figure>
       </div>
