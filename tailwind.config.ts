@@ -1,12 +1,9 @@
 import type { Config } from "tailwindcss";
+import tailwindCss3d from "tailwindcss-3d";
 
 const config: Config = {
   darkMode: "class",
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
@@ -54,15 +51,20 @@ const config: Config = {
           "0%": { transform: "rotateY(360deg) scale(0)" },
           "100%": { transform: "rotateY(0deg) scale(1)" },
         },
+        move: {
+          "0%": { transform: "translate(-200px, 0)" },
+          "100%": { transform: "translate(0px, 0px)" },
+        },
       },
       animation: {
         flip: "flip 1s ease-in-out",
+        move: "move 1s",
       },
-      rotate: {
-        "y-180": "rotateY(180deg)",
+      fontSize: {
+        "15em": "15em",
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindCss3d({ legacy: true })],
 };
 export default config;

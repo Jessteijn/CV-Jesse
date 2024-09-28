@@ -1,8 +1,9 @@
+import { ThemeProvider } from "@/Components/ThemeProvider";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Questrial } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Questrial({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="mx-auto max-w-3xl px-3 py-10">{children}</main>
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <main className="mx-auto">{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );
