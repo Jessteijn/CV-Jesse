@@ -52,13 +52,18 @@ const config: Config = {
           "100%": { transform: "rotateY(0deg) scale(1)" },
         },
         move: {
-          "0%": { transform: "translate(-200px, 0)" },
+          "0%": { transform: "translate(-200px, 0px)" },
           "100%": { transform: "translate(0px, 0px)" },
+        },
+        "move-r": {
+          "0%": { transform: "translate(200px, 0px)" },
+          "100%": { transform: "translate(0px, 0)" },
         },
       },
       animation: {
         flip: "flip 1s ease-in-out",
         move: "move 1s",
+        "move-r": "move-r 1s",
       },
       fontSize: {
         "15em": "15em",

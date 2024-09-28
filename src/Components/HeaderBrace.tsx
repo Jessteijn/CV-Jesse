@@ -5,23 +5,22 @@ interface HeaderBraceProps {
 }
 
 const HeaderBrace: React.FC<HeaderBraceProps> = ({ type }) => {
-  const distance = 200;
   const item = {
     left: {
       text: "{",
-      startPosition: distance,
+      ani: "animate-move",
       textAlign: "right",
     },
     right: {
       text: "}",
-      startPosition: -distance,
+      ani: "animate-move-r",
       textAlign: "left",
     },
   };
 
   return (
     <div
-      className={`text-15em animate-move hidden md:block text-${item[type].textAlign}`}
+      className={`hidden text-15em md:block text-${item[type].textAlign} ${item[type].ani}`}
     >
       {item[type].text}
     </div>
