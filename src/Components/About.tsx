@@ -6,7 +6,7 @@ function About() {
   return (
     <section className="bg-slate-700 py-12 text-center text-xl">
       <Title color="#ffffff">About me</Title>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-lg px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="text-center md:text-right">
             <dl>
