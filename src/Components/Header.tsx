@@ -9,7 +9,7 @@ export default function Header() {
     <>
       <ParticlesBackground />
       <section className="flex min-h-screen flex-col items-center justify-center text-center">
-        <div className="mb-10 grid grid-cols-3 items-center justify-items-center">
+        <div className="mb-10 grid items-center justify-items-center md:grid-cols-3">
           <Brace type="left" />
           <ProfileImage />
           <Brace type="right" />
