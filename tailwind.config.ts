@@ -68,6 +68,16 @@ const config: Config = {
       fontSize: {
         "15em": "15em",
       },
+      inset: {
+        "1/2-minus-10px": "calc(50% - 10px)",
+      },
+      translate: {
+        "2px": "2px",
+      },
+      borderWidth: {
+        10: "10px",
+        20: "20px",
+      },
     },
   },
   plugins: [tailwindCss3d({ legacy: true })],

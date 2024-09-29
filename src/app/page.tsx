@@ -1,5 +1,7 @@
 import About from "@/Components/About";
+import Experiences from "@/Components/Experiences";
 import Header from "@/Components/Header";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,7 +13,7 @@ export default function Home() {
     <div>
       <Header />
       <About />
-      {/* <Experiences /> */}
+      <Experiences />
       {/* <Education /> */}
       {/* <Skills /> */}
     </div>
