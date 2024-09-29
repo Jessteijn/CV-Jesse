@@ -2,6 +2,7 @@ import About from "@/Components/About";
 import Education from "@/Components/Education";
 import Experiences from "@/Components/Experiences";
 import Header from "@/Components/Header";
+import Skills from "@/Components/Skills";
 
 import { Metadata } from "next";
 
@@ -16,7 +17,7 @@ export default function Home() {
       <About />
       <Experiences />
       <Education />
-      {/* <Skills /> */}
+      <Skills />
     </div>
   );
 }

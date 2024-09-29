@@ -81,6 +81,14 @@ const config: Config = {
       boxShadow: {
         edu: "10px 10px 0px #333333",
       },
+      scale: {
+        140: "1.4",
+        130: "1.3",
+      },
+      rotate: {
+        360: "360deg",
+        720: "720deg",
+      },
     },
   },
   plugins: [tailwindCss3d({ legacy: true })],
