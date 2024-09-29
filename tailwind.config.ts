@@ -78,6 +78,9 @@ const config: Config = {
         10: "10px",
         20: "20px",
       },
+      boxShadow: {
+        edu: "10px 10px 0px #333333",
+      },
     },
   },
   plugins: [tailwindCss3d({ legacy: true })],

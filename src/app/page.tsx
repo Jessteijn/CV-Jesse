@@ -1,4 +1,5 @@
 import About from "@/Components/About";
+import Education from "@/Components/Education";
 import Experiences from "@/Components/Experiences";
 import Header from "@/Components/Header";
 
@@ -14,7 +15,7 @@ export default function Home() {
       <Header />
       <About />
       <Experiences />
-      {/* <Education /> */}
+      <Education />
       {/* <Skills /> */}
     </div>
   );
