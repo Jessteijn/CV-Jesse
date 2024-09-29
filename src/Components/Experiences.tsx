@@ -6,7 +6,7 @@ function Experiences() {
     <section className="bg-stone-300 py-12 text-center text-xl text-zinc-800">
       <Title color="#2c3e50">Experiences</Title>
 
-      <div className="mx-auto">
+      <div className="container mx-auto">
         <Timeline side="left" time="May 2022 - Now" color="#e67e22">
           <h4 className="text-2xl font-bold" style={{ color: "#e67e22" }}>
             HedoN Electronic Developments B.V.
