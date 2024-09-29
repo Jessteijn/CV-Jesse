@@ -1,5 +1,6 @@
+import About from "@/Components/About";
+import Header from "@/Components/Header";
 import { Metadata } from "next";
-import Header from "../Components/Header";
 
 export const metadata: Metadata = {
   title: "Resume | Jesse Wessteijn",
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      {/* <About /> */}
+      <About />
       {/* <Experiences /> */}
       {/* <Education /> */}
       {/* <Skills /> */}
