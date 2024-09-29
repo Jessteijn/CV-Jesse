@@ -18,12 +18,12 @@ const ExperiencesTimelineItem: React.FC<ExperiencesTimelineItemProps> = ({
       {side === "left" ? (
         <div className="relative grid md:grid-cols-2">
           <div
-            className="left-1/2-minus-10px absolute top-4 z-10 hidden h-5 w-5 rounded-full md:block"
+            className="absolute left-1/2-minus-10px top-4 z-10 hidden h-5 w-5 rounded-full md:block"
             style={{ backgroundColor: color }}
           />
-          <div className="translate-x-2px border-gray-500 text-center transform md:border-r-4 md:text-right">
+          <div className="group border-gray-500 text-center translate-x-2px transform md:border-r-4 md:text-right">
             <div
-              className="border-b-10 border-l-20 border-t-10 absolute right-4 top-4 hidden h-0 w-0 border-transparent md:block"
+              className="absolute right-4 top-4 hidden h-0 w-0 border-b-10 border-l-20 border-t-10 border-transparent md:block"
               style={{ borderLeftColor: color }}
             />
             <div
@@ -43,7 +43,7 @@ const ExperiencesTimelineItem: React.FC<ExperiencesTimelineItemProps> = ({
       ) : (
         <div className="relative grid md:grid-cols-2">
           <div
-            className="left-1/2-minus-10px absolute top-4 z-10 hidden h-5 w-5 rounded-full md:block"
+            className="absolute left-1/2-minus-10px top-4 z-10 hidden h-5 w-5 rounded-full md:block"
             style={{ backgroundColor: color }}
           />
           <div className="hidden text-right md:block">
@@ -51,9 +51,9 @@ const ExperiencesTimelineItem: React.FC<ExperiencesTimelineItemProps> = ({
               {time}
             </div>
           </div>
-          <div className="-translate-x-2px border-gray-500 text-center transform md:border-l-4 md:text-left">
+          <div className="group border-gray-500 text-center -translate-x-2px transform md:border-l-4 md:text-left">
             <div
-              className="border-b-10 border-r-20 border-t-10 absolute left-4 top-4 hidden h-0 w-0 border-transparent md:block"
+              className="absolute left-4 top-4 hidden h-0 w-0 border-b-10 border-r-20 border-t-10 border-transparent md:block"
               style={{ borderRightColor: color }}
             />
             <div

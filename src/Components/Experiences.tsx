@@ -8,9 +8,14 @@ function Experiences() {
 
       <div className="container mx-auto">
         <Timeline side="left" time="May 2022 - Now" color="#e67e22">
-          <h4 className="text-2xl font-bold" style={{ color: "#e67e22" }}>
-            HedoN Electronic Developments B.V.
-          </h4>
+          <a href="https://hedon.nl" target="_blank" rel="noopener noreferrer">
+            <h4
+              className="text-2xl font-bold group-hover:underline"
+              style={{ color: "#e67e22" }}
+            >
+              HedoN Electronic Developments B.V.
+            </h4>
+          </a>
           <p className="text-base">
             <i className="text-red-900">Flexwerker</i>
             <br />
@@ -18,9 +23,18 @@ function Experiences() {
         </Timeline>
 
         <Timeline side="right" time="Jul 2020 - May 2022" color="#3498db">
-          <h4 className="text-2xl font-bold" style={{ color: "#3498db" }}>
-            Van der Ende Groep
-          </h4>
+          <a
+            href="https://vanderendegroup.nl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h4
+              className="text-2xl font-bold group-hover:underline"
+              style={{ color: "#3498db" }}
+            >
+              Van der Ende Groep
+            </h4>
+          </a>
           <p className="text-base">
             <i className="text-red-900">Assembly worker</i>
             <br />
@@ -28,9 +42,18 @@ function Experiences() {
         </Timeline>
 
         <Timeline side="left" time="Apr 2015 - Dec 2020" color="#2ecc71">
-          <h4 className="text-2xl font-bold" style={{ color: "#2ecc71" }}>
-            Van VLIET Flower Group
-          </h4>
+          <a
+            href="https://jvanvliet.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h4
+              className="text-2xl font-bold group-hover:underline"
+              style={{ color: "#2ecc71" }}
+            >
+              Van VLIET Flower Group
+            </h4>
+          </a>
           <p className="text-base">
             <i className="text-red-900">Logistic Worker</i>
             <br />
