@@ -16,7 +16,7 @@ const SkillGroup: React.FC<SkillGroupProps> = ({ name, items }) => {
             <Item
               key={key}
               name={item.name}
-              img={"/images/skills/" + item.name + ".png"}
+              img={"/images/skills/" + item.name.toLowerCase() + ".png"}
               color={item.color}
               percentage={item.percentage}
             />
