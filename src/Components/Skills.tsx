@@ -6,24 +6,24 @@ const skillImgs = [
   {
     name: "Front-ends",
     list: [
-      { name: "html5", color: "#f16529", percentage: 75 },
-      { name: "css3", color: "#29a9df", percentage: 70 },
-      { name: "sass", color: "#cb6699", percentage: 50 },
-      { name: "bootstrap", color: "#8b57d9", percentage: 30 },
-      { name: "javascript", color: "#f7df1e", percentage: 30 },
-      { name: "reactjs", color: "#61d9fa", percentage: 50 },
+      { name: "HTML5", color: "#f16529", percentage: 75 },
+      { name: "CSS3", color: "#29a9df", percentage: 70 },
+      { name: "SASS", color: "#cb6699", percentage: 50 },
+      { name: "Bootstrap", color: "#8b57d9", percentage: 30 },
+      { name: "Javascript", color: "#f7df1e", percentage: 30 },
+      { name: "ReactJS", color: "#61d9fa", percentage: 50 },
     ],
   },
   {
     name: "Back-ends",
     list: [
       { name: "php", color: "#8993be", percentage: 80 },
-      { name: "nodejs", color: "#81ca2a", percentage: 75 },
+      { name: "NodeJS", color: "#81ca2a", percentage: 75 },
     ],
   },
   {
     name: "Databases",
-    list: [{ name: "mysql", color: "#0784af", percentage: 65 }],
+    list: [{ name: "MySQL", color: "#0784af", percentage: 65 }],
   },
   {
     name: "Tools",

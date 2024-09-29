@@ -6,15 +6,21 @@ import "react-circular-progressbar/dist/styles.css";
 
 interface SkillItemProps {
   img: string;
+  name: string;
   color: string;
   percentage: number;
 }
 
-const SkillItem: React.FC<SkillItemProps> = ({ img, color, percentage }) => {
+const SkillItem: React.FC<SkillItemProps> = ({
+  img,
+  name,
+  color,
+  percentage,
+}) => {
   return (
     <div className="text-center">
-      <div className="group relative my-3 flex items-center justify-center">
-        <div className="group-hover:rotate-360 group-hover:scale-130 h-24 w-24 transition-all duration-700 ease-in-out">
+      <div className="group relative mb-8 mt-3 flex items-center justify-center">
+        <div className="h-24 w-24 transition-all duration-700 ease-in-out group-hover:rotate-360 group-hover:scale-130">
           <CircularProgressbar
             value={percentage}
             styles={buildStyles({
@@ -28,8 +34,11 @@ const SkillItem: React.FC<SkillItemProps> = ({ img, color, percentage }) => {
           width="50"
           height="50"
           alt={img}
-          className="group-hover:scale-130 group-hover:-rotate-360 absolute flex transition-all duration-700 ease-in-out"
+          className="absolute flex transition-all duration-700 ease-in-out group-hover:-rotate-360 group-hover:scale-130"
         />
+        <div className="absolute mt-40 flex justify-center text-zinc-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          {name}
+        </div>
       </div>
     </div>
   );

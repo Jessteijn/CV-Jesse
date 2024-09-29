@@ -15,6 +15,7 @@ const SkillGroup: React.FC<SkillGroupProps> = ({ name, items }) => {
           {items.map((item, key) => (
             <Item
               key={key}
+              name={item.name}
               img={"/images/skills/" + item.name + ".png"}
               color={item.color}
               percentage={item.percentage}
