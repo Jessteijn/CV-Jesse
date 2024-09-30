@@ -19,7 +19,7 @@ const SkillItem: React.FC<SkillItemProps> = ({
 }) => {
   return (
     <div className="text-center">
-      <div className="group relative mb-8 mt-3 flex items-center justify-center">
+      <div className="group relative mb-8 mt-5 flex items-center justify-center">
         <div className="h-24 w-24 transition-all duration-700 ease-in-out group-hover:rotate-360 group-hover:scale-130">
           <CircularProgressbar
             value={percentage}

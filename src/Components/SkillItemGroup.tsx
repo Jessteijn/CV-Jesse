@@ -11,7 +11,7 @@ const SkillGroup: React.FC<SkillGroupProps> = ({ name, items }) => {
     <div className="flex justify-center">
       <div className="sm:m-2/12 m-1/12 w-10/12 text-left sm:w-7/12">
         <h4 className="mx-5 my-3 font-bold">{name}</h4>
-        <div className="grid grid-cols-3 flex-wrap md:grid-cols-4 lg:grid-cols-6">
+        <div className="grid grid-cols-2 flex-wrap sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {items.map((item, key) => (
             <Item
               key={key}
