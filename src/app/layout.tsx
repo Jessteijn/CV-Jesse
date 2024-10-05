@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Questrial } from "next/font/google";
 import "./globals.css";
 
-const inter = Questrial({ weight: "400", subsets: ["latin"] });
+const questrial = Questrial({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={questrial.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <main className="mx-auto">{children}</main>
         </ThemeProvider>
