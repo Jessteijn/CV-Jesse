@@ -1,6 +1,8 @@
+import mascot from "@/assets/mascot.png";
 import Interersts from "@/Components/AboutInterest";
 import Title from "@/Components/Title";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
   return (
@@ -19,24 +21,23 @@ function About() {
             </dl>
           </div>
           <div className="hidden text-left md:block">
-            <div className="group relative">
-              <a
-                href="https://instagram.com/n.voort"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/images/mascot.png"
-                  width="180"
-                  height="180"
-                  alt="Mascotte"
-                  className="hover:cursor-pointer"
-                />
-                <div className="absolute flex opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  @N.Voort
-                </div>
-              </a>
-            </div>
+            <Link
+              href="https://nvoort.nl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative"
+            >
+              <Image
+                src={mascot}
+                width="180"
+                height="180"
+                alt="Mascotte"
+                className="hover:cursor-pointer"
+              />
+              <div className="absolute flex opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                @N.Voort
+              </div>
+            </Link>
           </div>
         </div>
         <div className="mx-auto mt-5 w-10/12 max-w-screen-md px-4 sm:max-w-screen-sm sm:px-6 lg:max-w-screen-lg lg:px-8">

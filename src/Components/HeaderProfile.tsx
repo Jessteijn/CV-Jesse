@@ -1,4 +1,5 @@
 "use client";
+import profile from "@/assets/profile.png";
 import Image from "next/image";
 import React from "react";
 
@@ -8,7 +9,7 @@ export default class HeaderProfile extends React.Component {
       <div className="flex flex-col items-center justify-center">
         <figure className="m-0 cursor-pointer">
           <Image
-            src="/images/profile.png"
+            src={profile}
             width="300"
             height="300"
             alt="Profile picture"
