@@ -3,7 +3,7 @@ import Group from "@/Components/SkillItemGroup";
 import Title from "@/Components/Title";
 import React from "react";
 
-function Skills() {
+export default function Skills() {
   return (
     <section className="bg-[#2f353f] py-12 text-center text-xl">
       <Title color="#ffffff">Skills</Title>
@@ -13,5 +13,3 @@ function Skills() {
     </section>
   );
 }
-
-export default Skills;
