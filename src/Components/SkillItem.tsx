@@ -1,19 +1,13 @@
 "use client";
+import { SkillImgsProps } from "@/types/skills-image-types";
 import Image from "next/image";
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-interface SkillItemProps {
-  img: string;
-  name: string;
-  color: string;
-  percentage: number;
-}
-
-const SkillItem: React.FC<SkillItemProps> = ({
-  img,
+const SkillItem: React.FC<SkillImgsProps> = ({
   name,
+  img,
   color,
   percentage,
 }) => {
@@ -33,7 +27,7 @@ const SkillItem: React.FC<SkillItemProps> = ({
           src={img}
           width="50"
           height="50"
-          alt={img}
+          alt={name}
           className="absolute flex transition-all duration-700 ease-in-out group-hover:-rotate-360 group-hover:scale-130"
         />
         <div className="absolute mt-40 flex justify-center text-zinc-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
