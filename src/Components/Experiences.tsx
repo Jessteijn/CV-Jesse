@@ -19,6 +19,8 @@ function Experiences() {
           <p className="text-base">
             <i className="text-red-900">Flexwerker</i>
             <br />
+            Werkzaamheden als assembleren, testen, solderen en repareren van
+            producten.
           </p>
         </Timeline>
 
@@ -38,6 +40,7 @@ function Experiences() {
           <p className="text-base">
             <i className="text-red-900">Assembly worker</i>
             <br />
+            Het assembleren van producten en het testen van de werking.
           </p>
         </Timeline>
 
@@ -57,6 +60,7 @@ function Experiences() {
           <p className="text-base">
             <i className="text-red-900">Logistic Worker</i>
             <br />
+            Planten sorteren op klant en het verwerken van planten op denen.
           </p>
         </Timeline>
       </div>
