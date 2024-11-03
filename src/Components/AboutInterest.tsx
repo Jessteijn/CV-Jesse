@@ -1,9 +1,9 @@
 import { interest } from "@/assets/interest/";
 import Image from "next/image";
 
-function AboutInterest() {
+export default function AboutInterest() {
   return (
-    <div>
+    <>
       <div className="mt-5 text-left text-xl font-bold text-yellow-400">
         My Interests
       </div>
@@ -24,8 +24,6 @@ function AboutInterest() {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
-
-export default AboutInterest;

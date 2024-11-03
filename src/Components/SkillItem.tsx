@@ -5,12 +5,12 @@ import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const SkillItem: React.FC<SkillImgsProps> = ({
+export default function SkillItem({
   name,
   img,
   color,
   percentage,
-}) => {
+}: SkillImgsProps) {
   return (
     <div className="text-center">
       <div className="group relative mb-8 mt-5 flex items-center justify-center">
@@ -36,6 +36,4 @@ const SkillItem: React.FC<SkillImgsProps> = ({
       </div>
     </div>
   );
-};
-
-export default SkillItem;
+}

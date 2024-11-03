@@ -20,7 +20,7 @@ const ageCalc = () => {
   return age;
 };
 
-function About() {
+export default function About() {
   return (
     <section className="bg-slate-700 pb-3 pt-12 text-center text-xl">
       <Title color="#ffffff">About me</Title>
@@ -81,5 +81,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

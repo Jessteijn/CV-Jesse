@@ -11,12 +11,12 @@ function getOtherSide(side: "left" | "right"): "left" | "right" {
   return side === "left" ? "right" : "left";
 }
 
-const ExperiencesTimelineItem: React.FC<ExperiencesTimelineItemProps> = ({
+export default function ExperiencesTimelineItem({
   side,
   color,
   time,
   children,
-}) => {
+}: ExperiencesTimelineItemProps) {
   return (
     <div className="relative md:grid md:grid-cols-2">
       <div
@@ -47,6 +47,4 @@ const ExperiencesTimelineItem: React.FC<ExperiencesTimelineItemProps> = ({
       </div>
     </div>
   );
-};
-
-export default ExperiencesTimelineItem;
+}
