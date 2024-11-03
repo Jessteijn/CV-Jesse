@@ -1,7 +1,7 @@
 import Timeline from "@/Components/ExperiencesTimelineItem";
 import Title from "@/Components/Title";
 
-function Experiences() {
+export default function Experiences() {
   return (
     <section className="bg-stone-300 py-12 text-center text-xl text-zinc-800">
       <Title color="#2c3e50">Experiences</Title>
@@ -67,5 +67,3 @@ function Experiences() {
     </section>
   );
 }
-
-export default Experiences;

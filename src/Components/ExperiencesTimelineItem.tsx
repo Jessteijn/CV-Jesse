@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ExperiencesTimelineItemProps {
   side: "left" | "right";
   color: string;
@@ -7,16 +5,12 @@ interface ExperiencesTimelineItemProps {
   children: React.ReactNode;
 }
 
-function getOtherSide(side: "left" | "right"): "left" | "right" {
-  return side === "left" ? "right" : "left";
-}
-
-const ExperiencesTimelineItem: React.FC<ExperiencesTimelineItemProps> = ({
+export default function ExperiencesTimelineItem({
   side,
   color,
   time,
   children,
-}) => {
+}: ExperiencesTimelineItemProps) {
   return (
     <div className="relative md:grid md:grid-cols-2">
       <div
@@ -24,10 +18,10 @@ const ExperiencesTimelineItem: React.FC<ExperiencesTimelineItemProps> = ({
         style={{ backgroundColor: color }}
       />
       <div
-        className={`md:text-${getOtherSide(side)} group border-gray-500 text-center transform ${side === "left" ? "md:border-r-4 md:translate-x-2px" : "md:border-l-4 md:-translate-x-2px"} `}
+        className={`group border-gray-500 text-center transform ${side === "left" ? "md:border-r-4 md:text-right md:translate-x-2px" : "md:border-l-4 md:text-left md:-translate-x-2px"} `}
       >
         <div
-          className={`absolute ${getOtherSide(side)}-4 top-4 hidden h-0 w-0 border-b-10 ${side === "left" ? "border-l-20" : "border-r-20"} border-t-10 border-transparent md:block`}
+          className={`absolute top-4 hidden h-0 w-0 border-b-10 ${side === "left" ? "right-4 border-l-20" : "left-4 border-r-20"} border-t-10 border-transparent md:block`}
           style={{ borderLeftColor: color, borderRightColor: color }}
         />
         <div
@@ -47,6 +41,4 @@ const ExperiencesTimelineItem: React.FC<ExperiencesTimelineItemProps> = ({
       </div>
     </div>
   );
-};
-
-export default ExperiencesTimelineItem;
+}

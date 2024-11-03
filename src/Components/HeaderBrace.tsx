@@ -1,10 +1,8 @@
-import React from "react";
-
 interface HeaderBraceProps {
   type: "left" | "right";
 }
 
-const HeaderBrace: React.FC<HeaderBraceProps> = ({ type }) => {
+export default function HeaderBrace({ type }: HeaderBraceProps) {
   const item = {
     left: {
       text: "{",
@@ -25,6 +23,4 @@ const HeaderBrace: React.FC<HeaderBraceProps> = ({ type }) => {
       {item[type].text}
     </div>
   );
-};
-
-export default HeaderBrace;
+}

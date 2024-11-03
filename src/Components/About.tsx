@@ -20,7 +20,7 @@ const ageCalc = () => {
   return age;
 };
 
-function About() {
+export default function About() {
   return (
     <section className="bg-slate-700 pb-3 pt-12 text-center text-xl">
       <Title color="#ffffff">About me</Title>
@@ -32,7 +32,7 @@ function About() {
               <dd className="mb-7">Jesse Wessteijn</dd>
               <dt className="font-bold text-yellow-400">EMAIL</dt>
               <dd className="mb-7">jessteijn@hotmail.nl</dd>
-              <dt className="font-bold text-yellow-400">MOBILE No.</dt>
+              <dt className="font-bold text-yellow-400">MOBILE NO.</dt>
               <dd className="mb-7">+31 6 17848853</dd>
             </dl>
           </div>
@@ -64,9 +64,9 @@ function About() {
           programmeer graag en ben erg nieuwsgierig in het leren van nieuwe
           dingen. Deze website heb ik dan ook gemaakt met een simpele basis
           kennis van HTML en ik heb alles wat ik nodig had om deze website te
-          maken opgezocht en uitgevogelen. Ik heb mezelf ook typescript en
-          nextjs en tailwindcss aangeleerd. Ook heb ik de portfolio website van
-          mijn vriendin gemaakt:{" "}
+          maken opgezocht en uitgevogeld. Ik heb mezelf ook typescript en nextjs
+          en tailwindcss aangeleerd. Ook heb ik de portfolio website van mijn
+          vriendin gemaakt:{" "}
           <Link
             href="https://nvoort.nl"
             target="_blank"
@@ -81,5 +81,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

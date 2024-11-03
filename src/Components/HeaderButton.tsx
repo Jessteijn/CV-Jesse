@@ -1,14 +1,12 @@
-import React from "react";
-
 interface HeaderButtonProps {
   title: string;
   url: string;
 }
 
-const HeaderButton: React.FC<HeaderButtonProps> = ({ title, url }) => {
+export default function HeaderButton({ title, url }: HeaderButtonProps) {
   return (
     <a
-      className="mx-2 my-0 rounded-full bg-blue-600 px-6 py-0 text-xl text-white hover:bg-blue-700"
+      className="mx-2 my-0 rounded-full bg-blue-600 px-6 py-1 text-xl text-white hover:bg-blue-700"
       href={url}
       target="_blank"
       rel="noopener noreferrer"
@@ -16,6 +14,4 @@ const HeaderButton: React.FC<HeaderButtonProps> = ({ title, url }) => {
       {title}
     </a>
   );
-};
-
-export default HeaderButton;
+}

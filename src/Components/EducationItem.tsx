@@ -1,5 +1,3 @@
-import React from "react";
-
 interface EducationItemProps {
   color: string;
   name: string;
@@ -8,17 +6,17 @@ interface EducationItemProps {
   major?: string;
 }
 
-const EducationItem: React.FC<EducationItemProps> = ({
+export default function EducationItem({
   color,
   name,
   time,
   gpa,
   major,
-}) => {
+}: EducationItemProps) {
   return (
     <div className="flex justify-center py-4">
       <div
-        className="shadow-edu mx-1/12 sm:mx-1/4 w-10/12 max-w-3xl border-l-8 border-solid bg-white sm:w-1/2"
+        className="mx-1/12 sm:mx-1/4 w-10/12 max-w-3xl border-l-8 border-solid bg-white shadow-edu sm:w-1/2"
         style={{ borderLeftColor: color }}
       >
         <div className="m-4 grid grid-cols-2">
@@ -35,6 +33,4 @@ const EducationItem: React.FC<EducationItemProps> = ({
       </div>
     </div>
   );
-};
-
-export default EducationItem;
+}

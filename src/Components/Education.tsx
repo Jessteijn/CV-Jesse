@@ -1,10 +1,10 @@
 import Item from "@/Components/EducationItem";
 import Title from "@/Components/Title";
 
-function Education() {
+export default function Education() {
   return (
-    <div className="bg-slate-500 py-12 text-xl text-zinc-800">
-      <section className="text-center">
+    <section className="bg-slate-500 py-12 text-xl text-zinc-800">
+      <div className="text-center">
         <Title color="#ffffff">Education</Title>
         <Item
           time="2020 - Now (B.Sc.)"
@@ -19,9 +19,7 @@ function Education() {
           gpa="7"
           color="#3498db"
         />
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
-
-export default Education;
