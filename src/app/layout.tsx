@@ -1,3 +1,4 @@
+// import Navbar from "@/Components/navbar";
 import { ThemeProvider } from "@/Components/ThemeProvider";
 import type { Metadata } from "next";
 import { Questrial } from "next/font/google";
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={questrial.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
+          {/* <Navbar /> */}
           <main className="mx-auto">{children}</main>
         </ThemeProvider>
       </body>
