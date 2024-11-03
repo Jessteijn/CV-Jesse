@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Typist from "react-typist-component";
 
 export default function HeaderTitle() {

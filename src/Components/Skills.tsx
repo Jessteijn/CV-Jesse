@@ -1,7 +1,6 @@
 import { skillImgs } from "@/assets/skills";
 import Group from "@/Components/SkillItemGroup";
 import Title from "@/Components/Title";
-import React from "react";
 
 export default function Skills() {
   return (

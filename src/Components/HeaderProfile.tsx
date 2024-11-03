@@ -1,7 +1,6 @@
 "use client";
 import profile from "@/assets/profile.png";
 import Image from "next/image";
-import React from "react";
 
 export default function HeaderProfile() {
   return (

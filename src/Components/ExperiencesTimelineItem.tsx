@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ExperiencesTimelineItemProps {
   side: "left" | "right";
   color: string;

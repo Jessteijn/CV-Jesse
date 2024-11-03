@@ -1,5 +1,3 @@
-import React from "react";
-
 interface HeaderButtonProps {
   title: string;
   url: string;

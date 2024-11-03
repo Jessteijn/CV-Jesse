@@ -1,7 +1,6 @@
 "use client";
 import { SkillImgsProps } from "@/types/skills-image-types";
 import Image from "next/image";
-import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
