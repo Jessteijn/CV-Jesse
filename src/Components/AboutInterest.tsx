@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutInterest() {
   return (
     <>
-      <div className="mt-5 text-left text-xl font-bold text-yellow-400">
+      <div className="my-5 text-left text-xl font-bold text-yellow-400">
         My Interests
       </div>
       <div className="flex justify-center gap-8">
