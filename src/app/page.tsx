@@ -2,6 +2,7 @@
 import About from "@/Components/About";
 import Education from "@/Components/Education";
 import Experiences from "@/Components/Experiences";
+import Extra from "@/Components/Extra";
 import Header from "@/Components/Header";
 import Skills from "@/Components/Skills";
 
@@ -22,6 +23,7 @@ export default function Home() {
           <About />
           <Experiences />
           <Education />
+          <Extra />
           <Skills />
         </>
       ) : (
