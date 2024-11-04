@@ -7,17 +7,19 @@ export default function Education() {
       <div className="text-center">
         <Title color="#ffffff">Education</Title>
         <Item
-          time="2020 - Now (B.Sc.)"
-          name="TU Delft"
-          major="Electrical Engineering"
+          time="2020 - Now"
+          name="TU Delft (B.Sc.)"
+          major="Major: Electrical Engineering"
+          minor="Minor: Computer Science"
           gpa="7.8"
-          color="#2ecc71"
+          color="#00a6d6"
         />
         <Item
           time="2014 - 2020 (High School)"
           name="ISW Gasthuislaan"
+          major="VWO Natuur & Techniek en Natuur & Gezondheid"
           gpa="7"
-          color="#3498db"
+          color="#F1B51C"
         />
       </div>
     </section>
