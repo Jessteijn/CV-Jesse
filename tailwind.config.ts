@@ -6,10 +6,12 @@ const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      colors: {
+        about: "var(--color-about)",
+        experience: "var(--color-experience)",
+        extra: "var(--color-extra)",
+        education: "var(--color-education)",
+        skills: "var(--color-skills)",
       },
       keyframes: {
         flip: {
@@ -53,6 +55,9 @@ const config: Config = {
       rotate: {
         360: "360deg",
         720: "720deg",
+      },
+      margin: {
+        "2px": "2px",
       },
     },
   },

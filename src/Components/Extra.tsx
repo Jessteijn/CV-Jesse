@@ -1,11 +1,12 @@
 import Item from "@/Components/ExtraItems";
 import Title from "@/Components/Title";
+import { pageProps } from "@/types/page-type";
 
-export default function Extra() {
+export default function Extra({ className }: pageProps) {
   return (
-    <section className="bg-slate-300 py-12 text-lg text-zinc-800">
-      <div className="text-center">
-        <Title color="#ffffff">Extra</Title>
+    <section className={`${className} py-12 text-center text-lg`}>
+      <Title>Extra</Title>
+      <div className="text-zinc-800">
         <Item
           time="2020 - Now (B.Sc.)"
           name="Welpenleiding"

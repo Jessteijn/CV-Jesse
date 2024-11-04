@@ -28,15 +28,15 @@ export const skillImgs: SkillImgsGroupProps[] = [
     items: [
       { name: "Arduino", img: arduino, color: "#00979d", percentage: 90 },
       { name: "VHDL", img: vhdl, color: "#4e2a8e", percentage: 75 },
-      { name: "c", img: c, color: "#03599C", percentage: 80 },
-      { name: "c++", img: cplus, color: "#03599C", percentage: 60 },
+      { name: "c", img: c, color: "#03599C", percentage: 90 },
+      { name: "c++", img: cplus, color: "#03599C", percentage: 80 },
       { name: "csharp", img: csharp, color: "#68217a", percentage: 50 },
     ],
   },
   {
     name: "Programming Languages",
     items: [
-      { name: "Python", img: python, color: "#306998", percentage: 85 },
+      { name: "Python", img: python, color: "#306998", percentage: 95 },
       { name: "MATLAB", img: matlab, color: "#e16737", percentage: 75 },
     ],
   },

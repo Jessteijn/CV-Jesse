@@ -1,11 +1,12 @@
 import Item from "@/Components/EducationItem";
 import Title from "@/Components/Title";
+import { pageProps } from "@/types/page-type";
 
-export default function Education() {
+export default function Education({ className }: pageProps) {
   return (
-    <section className="bg-slate-500 py-12 text-xl text-zinc-800">
-      <div className="text-center">
-        <Title color="#ffffff">Education</Title>
+    <section className={`${className} py-12 text-center text-xl`}>
+      <Title>Education</Title>
+      <div className="text-zinc-800">
         <Item
           time="2020 - Now"
           name="TU Delft (B.Sc.)"

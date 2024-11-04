@@ -1,13 +1,14 @@
 import Timeline from "@/Components/ExperiencesTimelineItem";
 import Title from "@/Components/Title";
+import { pageProps } from "@/types/page-type";
 import Link from "next/link";
 
-export default function Experiences() {
+export default function Experiences({ className }: pageProps) {
   return (
-    <section className="bg-stone-300 py-12 text-center text-xl text-zinc-800">
-      <Title color="#2c3e50">Experiences</Title>
+    <section className={`${className} py-12 text-center text-xl`}>
+      <Title>Experiences</Title>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto text-zinc-800">
         <Timeline side="left" time="May 2022 - Now" color="#e67e22">
           <Link
             href="https://hedon.nl"

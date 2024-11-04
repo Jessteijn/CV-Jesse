@@ -1,6 +1,7 @@
 import mascot from "@/assets/mascot.png";
 import Interersts from "@/Components/AboutInterest";
 import Title from "@/Components/Title";
+import { pageProps } from "@/types/page-type";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,9 +21,9 @@ const ageCalc = () => {
   return age;
 };
 
-export default function About() {
+export default function About({ className }: pageProps) {
   return (
-    <section className="bg-slate-700 pb-3 pt-12 text-center text-xl">
+    <section className={`${className} pb-3 pt-12 text-center text-xl`}>
       <Title color="#ffffff">About me</Title>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-lg gap-8 md:grid-cols-2">
