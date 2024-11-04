@@ -2,6 +2,7 @@
 import About from "@/Components/About";
 import Education from "@/Components/Education";
 import Experiences from "@/Components/Experiences";
+import Extra from "@/Components/Extra";
 import Header from "@/Components/Header";
 import Skills from "@/Components/Skills";
 
@@ -19,10 +20,11 @@ export default function Home() {
       {mounted ? (
         <>
           <Header />
-          <About />
-          <Experiences />
-          <Education />
-          <Skills />
+          <About className="bg-about" />
+          <Experiences className="bg-experience" />
+          <Education className="bg-education" />
+          <Extra className="bg-extra" />
+          <Skills className="bg-skills" />
         </>
       ) : (
         <section className="flex h-screen items-center justify-center">

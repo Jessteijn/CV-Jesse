@@ -4,6 +4,7 @@ interface EducationItemProps {
   time: string;
   gpa: string;
   major?: string;
+  minor?: string;
 }
 
 export default function EducationItem({
@@ -12,21 +13,24 @@ export default function EducationItem({
   time,
   gpa,
   major,
+  minor,
 }: EducationItemProps) {
   return (
     <div className="flex justify-center py-4">
       <div
-        className="mx-1/12 sm:mx-1/4 w-10/12 max-w-3xl border-l-8 border-solid bg-white shadow-edu sm:w-1/2"
+        className="mx-1/12 md:mx-1/4 w-10/12 max-w-3xl border-l-8 border-solid bg-white shadow-edu md:w-1/2"
         style={{ borderLeftColor: color }}
       >
-        <div className="m-4 grid grid-cols-2">
-          <div className="text-left">
+        <div className="m-4 grid grid-cols-3">
+          <div className="col-span-2 text-left">
             <p>{time}</p>
             <h4 className="text-2xl font-bold">{name}</h4>
-            {major && <i>Major: {major}</i>}
+            {major && <i>{major}</i>}
+            {major && minor && <br />}
+            {minor && <i>{minor}</i>}
           </div>
           <div className="text-right">
-            <p>GPA</p>
+            <p>Gemiddeld</p>
             <h4 className="text-3xl text-red-400">{gpa}</h4>
           </div>
         </div>

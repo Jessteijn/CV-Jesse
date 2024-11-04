@@ -1,21 +1,27 @@
 import Timeline from "@/Components/ExperiencesTimelineItem";
 import Title from "@/Components/Title";
+import { pageProps } from "@/types/page-type";
+import Link from "next/link";
 
-export default function Experiences() {
+export default function Experiences({ className }: pageProps) {
   return (
-    <section className="bg-stone-300 py-12 text-center text-xl text-zinc-800">
-      <Title color="#2c3e50">Experiences</Title>
+    <section className={`${className} py-12 text-center text-xl`}>
+      <Title>Experiences</Title>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto text-zinc-800">
         <Timeline side="left" time="May 2022 - Now" color="#e67e22">
-          <a href="https://hedon.nl" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://hedon.nl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h4
               className="text-2xl font-bold group-hover:underline"
               style={{ color: "#e67e22" }}
             >
               HedoN Electronic Developments B.V.
             </h4>
-          </a>
+          </Link>
           <p className="text-base">
             <i className="text-red-900">Flexwerker</i>
             <br />
@@ -25,7 +31,7 @@ export default function Experiences() {
         </Timeline>
 
         <Timeline side="right" time="Jul 2020 - May 2022" color="#3498db">
-          <a
+          <Link
             href="https://vanderendegroup.nl"
             target="_blank"
             rel="noopener noreferrer"
@@ -36,7 +42,7 @@ export default function Experiences() {
             >
               Van der Ende Groep
             </h4>
-          </a>
+          </Link>
           <p className="text-base">
             <i className="text-red-900">Assembly worker</i>
             <br />
@@ -45,7 +51,7 @@ export default function Experiences() {
         </Timeline>
 
         <Timeline side="left" time="Apr 2015 - Dec 2020" color="#2ecc71">
-          <a
+          <Link
             href="https://jvanvliet.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -56,7 +62,7 @@ export default function Experiences() {
             >
               Van VLIET Flower Group
             </h4>
-          </a>
+          </Link>
           <p className="text-base">
             <i className="text-red-900">Logistic Worker</i>
             <br />
