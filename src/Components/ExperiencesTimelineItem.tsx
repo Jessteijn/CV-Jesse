@@ -18,7 +18,7 @@ export default function ExperiencesTimelineItem({
         style={{ backgroundColor: color }}
       />
       <div
-        className={`group border-gray-500 text-center transform ${side === "left" ? "md:border-r-4 md:text-right md:translate-x-2px" : "md:border-l-4 md:text-left md:-translate-x-2px"} `}
+        className={`group border-indigo-200 text-center transform ${side === "left" ? "md:border-r-4 md:text-right md:translate-x-2px" : "md:border-l-4 md:text-left md:-translate-x-2px"} `}
       >
         <div
           className={`absolute top-4 hidden h-0 w-0 border-b-10 ${side === "left" ? "right-4 border-l-20" : "left-4 border-r-20"} border-t-10 border-transparent md:block`}
