@@ -24,7 +24,7 @@ const ageCalc = () => {
 export default function About({ className }: pageProps) {
   return (
     <section className={`${className} pb-3 pt-12 text-center text-xl`}>
-      <Title color="#ffffff">About me</Title>
+      <Title>About me</Title>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-lg gap-8 md:grid-cols-2">
           <div className="text-center md:text-right">
