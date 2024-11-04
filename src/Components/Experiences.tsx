@@ -6,10 +6,10 @@ import Link from "next/link";
 export default function Experiences({ className }: pageProps) {
   return (
     <section className={`${className} py-12 text-center text-xl`}>
-      <Title>Experiences</Title>
+      <Title>Ervaringen</Title>
 
       <div className="container mx-auto text-zinc-800">
-        <Timeline side="left" time="May 2022 - Now" color="#e67e22">
+        <Timeline side="left" time="May 2022 - Heden" color="#e67e22">
           <Link
             href="https://hedon.nl"
             target="_blank"

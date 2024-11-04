@@ -8,7 +8,7 @@ export default function Extra({ className }: pageProps) {
       <Title>Extra</Title>
       <div className="text-zinc-800">
         <Item
-          time="2020 - Now (B.Sc.)"
+          time="2020 - Heden"
           name="Welpenleiding"
           project="Scouting Rambonnetgroep Naaldwijk"
           link="https://rambonnetgroep.nl"
