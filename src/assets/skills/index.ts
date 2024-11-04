@@ -28,9 +28,9 @@ export const skillImgs: SkillImgsGroupProps[] = [
     items: [
       { name: "Arduino", img: arduino, color: "#00979d", percentage: 90 },
       { name: "VHDL", img: vhdl, color: "#4e2a8e", percentage: 75 },
-      { name: "c", img: c, color: "#03599C", percentage: 90 },
-      { name: "c++", img: cplus, color: "#03599C", percentage: 80 },
-      { name: "csharp", img: csharp, color: "#68217a", percentage: 50 },
+      { name: "C", img: c, color: "#03599C", percentage: 90 },
+      { name: "C++", img: cplus, color: "#03599C", percentage: 80 },
+      { name: "Csharp", img: csharp, color: "#68217a", percentage: 50 },
     ],
   },
   {
@@ -65,7 +65,7 @@ export const skillImgs: SkillImgsGroupProps[] = [
   {
     name: "Back-ends",
     items: [
-      { name: "php", img: php, color: "#8993be", percentage: 80 },
+      { name: "PHP", img: php, color: "#8993be", percentage: 80 },
       { name: "NodeJS", img: nodejs, color: "#81ca2a", percentage: 75 },
       { name: "NextJS", img: nextjs, color: "#000000", percentage: 55 },
     ],

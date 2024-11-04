@@ -5,7 +5,7 @@ export default function AboutInterest() {
   return (
     <>
       <div className="my-5 text-left text-xl font-bold text-yellow-400">
-        My Interests
+        Mijn Interessen
       </div>
       <div className="flex flex-wrap justify-center gap-8">
         {interest.map((item, index) => (

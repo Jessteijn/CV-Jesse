@@ -5,10 +5,10 @@ import { pageProps } from "@/types/page-type";
 export default function Education({ className }: pageProps) {
   return (
     <section className={`${className} py-12 text-center text-xl`}>
-      <Title>Education</Title>
+      <Title>Opleidingen</Title>
       <div className="text-zinc-800">
         <Item
-          time="2020 - Now"
+          time="2020 - Heden"
           name="TU Delft (B.Sc.)"
           major="Major: Electrical Engineering"
           minor="Minor: Computer Science"

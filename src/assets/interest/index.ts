@@ -7,8 +7,8 @@ import scouting from "./scouting-logo.svg";
 
 export const interest: interestProps[] = [
   { name: "Scouting", img: scouting },
-  { name: "Board Games", img: games },
-  { name: "Programming", img: programming },
-  { name: "Reading", img: reading },
+  { name: "Boord Spellen", img: games },
+  { name: "Programmeren", img: programming },
+  { name: "Lezen", img: reading },
   { name: "Board Sports", img: boarding },
 ];
