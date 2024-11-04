@@ -7,7 +7,7 @@ export default function AboutInterest() {
       <div className="my-5 text-left text-xl font-bold text-yellow-400">
         My Interests
       </div>
-      <div className="flex justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8">
         {interest.map((item, index) => (
           <div key={index} className="group flex flex-col items-center">
             <Image
