@@ -25,19 +25,27 @@ export default function ExtraItem({
         style={{ borderColor: color }}
       >
         <div className="m-4 text-left">
-          <div className="flex flex-wrap items-center gap-x-1">
-            <h4 className="text-2xl font-bold">{name}</h4>
-            {name && (project || link) ? <span className="mx-2">•</span> : null}
-            {project ? (
-              <h5 className="title-extra-part text-2xl">{project}</h5>
-            ) : null}
-            {project && link ? <span className="mx-2">•</span> : null}
+          <div className="flex justify-between">
+            <div className="flex flex-wrap items-center">
+              <h4 className="text-2xl font-bold">
+                {name}
+                {name && (project || link) ? (
+                  <span className="mx-2 text-xl font-normal">•</span>
+                ) : null}
+              </h4>
+
+              {project ? (
+                <>
+                  <h5 className="text-2xl">{project}</h5>
+                </>
+              ) : null}
+            </div>
             {link ? (
               <Link
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:cursor-pointer"
+                className="mt-2px inline-block hover:cursor-pointer"
               >
                 <Globe size={24} color="blue" />
               </Link>
