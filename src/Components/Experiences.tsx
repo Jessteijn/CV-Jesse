@@ -1,7 +1,6 @@
 import Timeline from "@/Components/ExperiencesTimelineItem";
 import Title from "@/Components/Title";
 import { pageProps } from "@/types/page-type";
-import Link from "next/link";
 
 export default function Experiences({ className }: pageProps) {
   return (
@@ -13,19 +12,13 @@ export default function Experiences({ className }: pageProps) {
       <Title>Ervaringen</Title>
 
       <div className="container mx-auto text-zinc-800">
-        <Timeline side="left" time="May 2022 - Heden" color="#e67e22">
-          <Link
-            href="https://hedon.nl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h4
-              className="text-2xl font-bold group-hover:underline"
-              style={{ color: "#e67e22" }}
-            >
-              HedoN Electronic Developments B.V.
-            </h4>
-          </Link>
+        <Timeline
+          title="HedoN Electronic Developments B.V."
+          side="left"
+          link="https://www.hedon.nl"
+          time="May 2022 - Heden"
+          color="#e17819"
+        >
           <p className="text-base">
             <i className="text-red-900">Flexwerker</i>
             <br />
@@ -34,19 +27,13 @@ export default function Experiences({ className }: pageProps) {
           </p>
         </Timeline>
 
-        <Timeline side="right" time="Jul 2020 - May 2022" color="#3498db">
-          <Link
-            href="https://vanderendegroup.nl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h4
-              className="text-2xl font-bold group-hover:underline"
-              style={{ color: "#3498db" }}
-            >
-              Van der Ende Groep
-            </h4>
-          </Link>
+        <Timeline
+          title="Van der Ende Groep"
+          side="right"
+          link="https://vanderendegroup.nl"
+          time="Jul 2020 - May 2022"
+          color="#2792d8"
+        >
           <p className="text-base">
             <i className="text-red-900">Assembly worker</i>
             <br />
@@ -54,19 +41,13 @@ export default function Experiences({ className }: pageProps) {
           </p>
         </Timeline>
 
-        <Timeline side="left" time="Apr 2015 - Dec 2020" color="#2ecc71">
-          <Link
-            href="https://jvanvliet.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h4
-              className="text-2xl font-bold group-hover:underline"
-              style={{ color: "#2ecc71" }}
-            >
-              Van VLIET Flower Group
-            </h4>
-          </Link>
+        <Timeline
+          title="Van VLIET Flower Group"
+          side="left"
+          link="https://www.vanvliet.com"
+          time="Apr 2015 - Dec 2020"
+          color="#25a75d"
+        >
           <p className="text-base">
             <i className="text-red-900">Logistic Worker</i>
             <br />
