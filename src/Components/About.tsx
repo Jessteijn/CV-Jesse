@@ -76,7 +76,7 @@ export default function About({ className }: pageProps) {
             href="https://nvoort.nl"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 underline"
+            className="text-blue-400 underline"
           >
             www.nvoort.nl
           </Link>

@@ -31,7 +31,7 @@ export default function EducationItem({
           </div>
           <div className="text-right">
             <p>Gemiddeld</p>
-            <h4 className="text-3xl text-red-400">{gpa}</h4>
+            <h4 className="text-3xl text-red-500">{gpa}</h4>
           </div>
         </div>
       </div>
