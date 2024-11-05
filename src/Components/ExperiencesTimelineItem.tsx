@@ -1,14 +1,20 @@
+import Link from "next/link";
+
 interface ExperiencesTimelineItemProps {
   side: "left" | "right";
+  title: string;
   color: string;
   time: string;
+  link?: string;
   children: React.ReactNode;
 }
 
 export default function ExperiencesTimelineItem({
   side,
+  title,
   color,
   time,
+  link,
   children,
 }: ExperiencesTimelineItemProps) {
   return (
@@ -29,6 +35,20 @@ export default function ExperiencesTimelineItem({
           style={{ borderColor: color }}
         >
           <p className="block text-base md:hidden">{time}</p>
+          {link ? (
+            <Link href={link} target="_blank" rel="noopener noreferrer">
+              <h2
+                className="text-2xl font-bold group-hover:underline"
+                style={{ color: color }}
+              >
+                {title}
+              </h2>
+            </Link>
+          ) : (
+            <h2 className="text-2xl font-bold" style={{ color: color }}>
+              {title}
+            </h2>
+          )}
           {children}
         </div>
       </div>

@@ -23,11 +23,15 @@ const ageCalc = () => {
 
 export default function About({ className }: pageProps) {
   return (
-    <section className={`${className} pb-3 pt-12 text-center text-xl`}>
+    <section
+      className={`${className} pb-3 pt-12 text-center text-xl`}
+      id="about"
+      aria-label="About me"
+    >
       <Title>Over mij</Title>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto grid max-w-lg gap-8 md:grid-cols-2">
-          <div className="text-center md:text-right">
+        <div className="mx-auto grid max-w-lg gap-8 sm:grid-cols-2">
+          <div className="text-center sm:text-right">
             <dl>
               <dt className="font-bold text-yellow-400">FULL NAME</dt>
               <dd className="mb-7">Jesse Wessteijn</dd>
@@ -37,7 +41,7 @@ export default function About({ className }: pageProps) {
               <dd className="mb-7">+31 6 17848853</dd>
             </dl>
           </div>
-          <div className="hidden text-left md:block">
+          <div className="hidden text-left sm:block">
             <Link
               href="https://nvoort.nl"
               target="_blank"
@@ -72,7 +76,7 @@ export default function About({ className }: pageProps) {
             href="https://nvoort.nl"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 underline"
+            className="text-blue-400 underline"
           >
             www.nvoort.nl
           </Link>

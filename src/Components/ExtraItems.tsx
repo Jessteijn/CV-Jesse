@@ -27,16 +27,16 @@ export default function ExtraItem({
         <div className="m-4 text-left">
           <div className="flex justify-between">
             <div className="flex flex-wrap items-center">
-              <h4 className="text-2xl font-bold">
+              <h2 className="text-2xl font-bold">
                 {name}
                 {name && (project || link) ? (
                   <span className="mx-2 text-xl font-normal">•</span>
                 ) : null}
-              </h4>
+              </h2>
 
               {project ? (
                 <>
-                  <h5 className="text-2xl">{project}</h5>
+                  <h3 className="text-2xl">{project}</h3>
                 </>
               ) : null}
             </div>
@@ -46,6 +46,7 @@ export default function ExtraItem({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2px inline-block hover:cursor-pointer"
+                title={link}
               >
                 <Globe size={24} color="blue" />
               </Link>

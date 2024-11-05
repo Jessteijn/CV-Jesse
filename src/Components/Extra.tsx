@@ -4,7 +4,11 @@ import { pageProps } from "@/types/page-type";
 
 export default function Extra({ className }: pageProps) {
   return (
-    <section className={`${className} py-12 text-center text-lg`}>
+    <section
+      className={`${className} py-12 text-center text-lg`}
+      id="extra"
+      aria-label="Extra"
+    >
       <Title>Extra</Title>
       <div className="text-zinc-800">
         <Item

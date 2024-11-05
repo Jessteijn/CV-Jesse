@@ -8,16 +8,17 @@ export default function Header() {
   return (
     <>
       <ParticlesBackground />
-      <section className="flex min-h-screen flex-col items-center justify-center text-center">
-        <div className="mb-10 grid items-center justify-items-center md:grid-cols-3">
+      <section
+        className="flex min-h-screen flex-col items-center justify-center gap-10 py-16 text-center"
+        id="header"
+      >
+        <div className="grid justify-items-center md:grid-cols-3">
           <Brace type="left" />
           <ProfileImage />
           <Brace type="right" />
         </div>
-        <div className="mb-10 flex flex-col items-center">
-          <Title />
-        </div>
-        <div className="mt-5 flex justify-center space-x-4">
+        <Title />
+        <div className="flex justify-center space-x-4">
           <Button title="My GitHub" url="https://github.com/Jessteijn" />
           <Button
             title="My LinkedIn"
