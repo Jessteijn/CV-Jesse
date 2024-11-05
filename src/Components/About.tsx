@@ -26,8 +26,8 @@ export default function About({ className }: pageProps) {
     <section className={`${className} pb-3 pt-12 text-center text-xl`}>
       <Title>Over mij</Title>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto grid max-w-lg gap-8 md:grid-cols-2">
-          <div className="text-center md:text-right">
+        <div className="mx-auto grid max-w-lg gap-8 sm:grid-cols-2">
+          <div className="text-center sm:text-right">
             <dl>
               <dt className="font-bold text-yellow-400">FULL NAME</dt>
               <dd className="mb-7">Jesse Wessteijn</dd>
@@ -37,7 +37,7 @@ export default function About({ className }: pageProps) {
               <dd className="mb-7">+31 6 17848853</dd>
             </dl>
           </div>
-          <div className="hidden text-left md:block">
+          <div className="hidden text-left sm:block">
             <Link
               href="https://nvoort.nl"
               target="_blank"
