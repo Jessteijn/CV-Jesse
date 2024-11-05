@@ -5,7 +5,11 @@ import Link from "next/link";
 
 export default function Experiences({ className }: pageProps) {
   return (
-    <section className={`${className} py-12 text-center text-xl`}>
+    <section
+      className={`${className} py-12 text-center text-xl`}
+      id="experience"
+      aria-label="Experiences"
+    >
       <Title>Ervaringen</Title>
 
       <div className="container mx-auto text-zinc-800">

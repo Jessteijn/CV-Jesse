@@ -23,7 +23,11 @@ const ageCalc = () => {
 
 export default function About({ className }: pageProps) {
   return (
-    <section className={`${className} pb-3 pt-12 text-center text-xl`}>
+    <section
+      className={`${className} pb-3 pt-12 text-center text-xl`}
+      id="about"
+      aria-label="About me"
+    >
       <Title>Over mij</Title>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-lg gap-8 sm:grid-cols-2">

@@ -4,7 +4,11 @@ import { pageProps } from "@/types/page-type";
 
 export default function Education({ className }: pageProps) {
   return (
-    <section className={`${className} py-12 text-center text-xl`}>
+    <section
+      className={`${className} py-12 text-center text-xl`}
+      id="education"
+      aria-label="Education"
+    >
       <Title>Opleidingen</Title>
       <div className="text-zinc-800">
         <Item

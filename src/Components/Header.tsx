@@ -8,7 +8,10 @@ export default function Header() {
   return (
     <>
       <ParticlesBackground />
-      <section className="flex min-h-screen flex-col items-center justify-center gap-10 py-16 text-center">
+      <section
+        className="flex min-h-screen flex-col items-center justify-center gap-10 py-16 text-center"
+        id="header"
+      >
         <div className="grid justify-items-center md:grid-cols-3">
           <Brace type="left" />
           <ProfileImage />
