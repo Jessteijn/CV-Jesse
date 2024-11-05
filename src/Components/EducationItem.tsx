@@ -24,14 +24,14 @@ export default function EducationItem({
         <div className="m-4 grid grid-cols-3">
           <div className="col-span-2 text-left">
             <p>{time}</p>
-            <h4 className="text-2xl font-bold">{name}</h4>
+            <h2 className="text-2xl font-bold">{name}</h2>
             {major && <i>{major}</i>}
             {major && minor && <br />}
             {minor && <i>{minor}</i>}
           </div>
           <div className="text-right">
             <p>Gemiddeld</p>
-            <h4 className="text-3xl text-red-500">{gpa}</h4>
+            <h2 className="text-3xl text-red-500">{gpa}</h2>
           </div>
         </div>
       </div>

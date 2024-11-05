@@ -37,17 +37,17 @@ export default function ExperiencesTimelineItem({
           <p className="block text-base md:hidden">{time}</p>
           {link ? (
             <Link href={link} target="_blank" rel="noopener noreferrer">
-              <h4
+              <h2
                 className="text-2xl font-bold group-hover:underline"
                 style={{ color: color }}
               >
                 {title}
-              </h4>
+              </h2>
             </Link>
           ) : (
-            <h4 className="text-2xl font-bold" style={{ color: color }}>
+            <h2 className="text-2xl font-bold" style={{ color: color }}>
               {title}
-            </h4>
+            </h2>
           )}
           {children}
         </div>
