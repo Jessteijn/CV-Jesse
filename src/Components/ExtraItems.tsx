@@ -21,7 +21,7 @@ export default function ExtraItem({
   return (
     <div className="flex justify-center py-4">
       <div
-        className="mx-auto w-10/12 max-w-3xl rounded-xl border-l-8 border-r-8 border-solid bg-white shadow-md md:w-3/5"
+        className="mx-auto w-10/12 max-w-3xl rounded-xl border-r-8 border-l-8 border-solid bg-white shadow-md md:w-3/5"
         style={{ borderColor: color }}
       >
         <div className="m-4 text-left">

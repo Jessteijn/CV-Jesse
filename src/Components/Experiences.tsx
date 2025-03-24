@@ -1,6 +1,6 @@
 import Timeline from "@/Components/ExperiencesTimelineItem";
 import Title from "@/Components/Title";
-import { pageProps } from "@/types/page-type";
+import { pageProps } from "@/lib/types/page-type";
 
 export default function Experiences({ className }: pageProps) {
   return (
@@ -17,7 +17,7 @@ export default function Experiences({ className }: pageProps) {
           side="right"
           link="https://elixir-engineers.com/"
           time="Maart 2025 - Heden"
-          color="#0e3749"
+          color="#195A7B"
         >
           <p className="text-base">
             <i className="text-red-900">Flexwerker</i>

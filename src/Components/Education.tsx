@@ -1,11 +1,12 @@
 import Item from "@/Components/EducationItem";
 import Title from "@/Components/Title";
-import { pageProps } from "@/types/page-type";
+import { pageProps } from "@/lib/types/page-type";
+import { cn } from "@/lib/utils";
 
 export default function Education({ className }: pageProps) {
   return (
     <section
-      className={`${className} py-12 text-center text-xl`}
+      className={cn("py-12 text-center text-xl", className)}
       id="education"
       aria-label="Education"
     >

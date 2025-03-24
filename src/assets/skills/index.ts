@@ -20,7 +20,7 @@ import terminal from "./terminal.svg";
 import typescript from "./typescript.svg";
 import vhdl from "./vhdl.svg";
 
-import type { SkillImgsGroupProps } from "@/types/skills-image-types";
+import type { SkillImgsGroupProps } from "@/lib/types/skills-image-types";
 
 export const skillImgs: SkillImgsGroupProps[] = [
   {

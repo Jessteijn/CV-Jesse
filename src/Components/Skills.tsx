@@ -1,7 +1,7 @@
 import { skillImgs } from "@/assets/skills";
 import Group from "@/Components/SkillItemGroup";
 import Title from "@/Components/Title";
-import { pageProps } from "@/types/page-type";
+import { pageProps } from "@/lib/types/page-type";
 
 export default function Skills({ className }: pageProps) {
   return (

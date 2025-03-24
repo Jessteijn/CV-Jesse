@@ -16,7 +16,7 @@ export default function AboutInterest() {
               alt={item.name}
               height="100"
               width="100"
-              className="h-24 transition-all duration-300 ease-in-out transform hover:scale-125"
+              className="h-24 transform transition-all duration-300 ease-in-out hover:scale-125"
             />
             <div className="mt-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               {item.name}

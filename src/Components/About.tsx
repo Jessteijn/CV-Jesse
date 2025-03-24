@@ -1,7 +1,7 @@
 import mascot from "@/assets/mascot.png";
 import Interersts from "@/Components/AboutInterest";
 import Title from "@/Components/Title";
-import { pageProps } from "@/types/page-type";
+import { pageProps } from "@/lib/types/page-type";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,7 +24,7 @@ const ageCalc = () => {
 export default function About({ className }: pageProps) {
   return (
     <section
-      className={`${className} pb-3 pt-12 text-center text-xl`}
+      className={`${className} pt-12 pb-3 text-center text-xl`}
       id="about"
       aria-label="About me"
     >
@@ -61,7 +61,7 @@ export default function About({ className }: pageProps) {
             </Link>
           </div>
         </div>
-        <div className="mx-auto mt-5 w-10/12 max-w-screen-md px-4 sm:max-w-screen-sm sm:px-6 lg:max-w-screen-lg lg:px-8">
+        <div className="mx-auto mt-5 w-10/12 max-w-(--breakpoint-md) px-4 sm:max-w-(--breakpoint-sm) sm:px-6 lg:max-w-(--breakpoint-lg) lg:px-8">
           Hello, mijn naam is <b className="text-red-300">Jesse Wessteijn</b> en
           ik ben <b className="text-red-300">{ageCalc()}</b> jaar oud. Ik ben
           een gedreven en enthousiasme Elektro student. Ik vind het leuk om te

@@ -1,11 +1,12 @@
 import Item from "@/Components/ExtraItems";
 import Title from "@/Components/Title";
-import { pageProps } from "@/types/page-type";
+import { pageProps } from "@/lib/types/page-type";
+import { cn } from "@/lib/utils";
 
 export default function Extra({ className }: pageProps) {
   return (
     <section
-      className={`${className} py-12 text-center text-lg`}
+      className={cn("py-12 text-center text-lg", className)}
       id="extra"
       aria-label="Extra"
     >
