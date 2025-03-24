@@ -1,5 +1,5 @@
 import Item from "@/Components/SkillItem";
-import { SkillImgsGroupProps } from "@/types/skills-image-types";
+import { SkillImgsGroupProps } from "@/lib/types/skills-image-types";
 
 export default function SkillGroup({ name, items }: SkillImgsGroupProps) {
   return (

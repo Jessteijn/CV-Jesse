@@ -1,4 +1,4 @@
-import { interestProps } from "@/types/interest-types";
+import { interestProps } from "@/lib/types/interest-types";
 import boarding from "./boarding.svg";
 import games from "./games.svg";
 import programming from "./programming.svg";

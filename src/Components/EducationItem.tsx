@@ -18,7 +18,7 @@ export default function EducationItem({
   return (
     <div className="flex justify-center py-4">
       <div
-        className="mx-1/12 md:mx-1/4 w-10/12 max-w-3xl border-l-8 border-solid bg-white shadow-edu md:w-1/2"
+        className="mx-1/12 md:mx-1/4 shadow-edu w-10/12 max-w-3xl border-l-8 border-solid bg-white md:w-1/2"
         style={{ borderLeftColor: color }}
       >
         <div className="m-4 grid grid-cols-3">

@@ -1,6 +1,6 @@
 import Timeline from "@/Components/ExperiencesTimelineItem";
 import Title from "@/Components/Title";
-import { pageProps } from "@/types/page-type";
+import { pageProps } from "@/lib/types/page-type";
 
 export default function Experiences({ className }: pageProps) {
   return (
@@ -13,10 +13,23 @@ export default function Experiences({ className }: pageProps) {
 
       <div className="container mx-auto text-zinc-800">
         <Timeline
+          title="Elixir Engineering"
+          side="right"
+          link="https://elixir-engineers.com/"
+          time="Maart 2025 - Heden"
+          color="#195A7B"
+        >
+          <p className="text-base">
+            <i className="text-red-900">Electrical Engineer</i>
+            <br />
+          </p>
+        </Timeline>
+
+        <Timeline
           title="HedoN Electronic Developments B.V."
           side="left"
           link="https://www.hedon.nl"
-          time="May 2022 - Heden"
+          time="Mei 2022 - Maart 2025"
           color="#e17819"
         >
           <p className="text-base">
