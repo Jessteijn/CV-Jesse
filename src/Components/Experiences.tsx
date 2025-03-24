@@ -13,10 +13,25 @@ export default function Experiences({ className }: pageProps) {
 
       <div className="container mx-auto text-zinc-800">
         <Timeline
+          title="Elixir Engineering"
+          side="right"
+          link="https://elixir-engineers.com/"
+          time="Maart 2025 - Heden"
+          color="#0e3749"
+        >
+          <p className="text-base">
+            <i className="text-red-900">Flexwerker</i>
+            <br />
+            Werkzaamheden als assembleren, testen, solderen en repareren van
+            producten.
+          </p>
+        </Timeline>
+
+        <Timeline
           title="HedoN Electronic Developments B.V."
           side="left"
           link="https://www.hedon.nl"
-          time="May 2022 - Heden"
+          time="Mei 2022 - Maart 2025"
           color="#e17819"
         >
           <p className="text-base">

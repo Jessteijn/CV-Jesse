@@ -7,3 +7,6 @@ const config = {
 };
 
 export default config;
+
+// Ensure the plugins key is exported directly
+export const plugins = config.plugins;

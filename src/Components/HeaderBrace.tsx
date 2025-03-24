@@ -7,18 +7,18 @@ export default function HeaderBrace({ type }: HeaderBraceProps) {
     left: {
       text: "{",
       ani: "animate-move",
-      textAlign: "right",
+      textAlign: "text-right",
     },
     right: {
       text: "}",
       ani: "animate-move-r",
-      textAlign: "left",
+      textAlign: "text-left",
     },
   };
 
   return (
     <div
-      className={`hidden text-15em md:block text-${item[type].textAlign} ${item[type].ani}`}
+      className={`hidden text-15em md:block ${item[type].textAlign} ${item[type].ani}`}
     >
       {item[type].text}
     </div>
