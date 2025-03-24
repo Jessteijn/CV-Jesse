@@ -1,4 +1,3 @@
-// import Navbar from "@/Components/navbar";
 import { ThemeProvider } from "@/Components/ThemeProvider";
 import type { Metadata } from "next";
 import { Questrial } from "next/font/google";
@@ -16,11 +15,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
       <body className={questrial.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           {/* <Navbar /> */}

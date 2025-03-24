@@ -20,10 +20,8 @@ export default function Experiences({ className }: pageProps) {
           color="#195A7B"
         >
           <p className="text-base">
-            <i className="text-red-900">Flexwerker</i>
+            <i className="text-red-900">Electrical Engineer</i>
             <br />
-            Werkzaamheden als assembleren, testen, solderen en repareren van
-            producten.
           </p>
         </Timeline>
 

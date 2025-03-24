@@ -13,6 +13,8 @@
   --animate-move: move 1s;
   --animate-move-r: move-r 1s;
 
+  --prefers-color-schema: dark;
+
   --text-15em: 15em;
 
   --inset-1\/2-minus-10px: calc(50% - 10px);
