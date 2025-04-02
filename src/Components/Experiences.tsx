@@ -13,19 +13,6 @@ export default function Experiences({ className }: pageProps) {
 
       <div className="container mx-auto text-zinc-800">
         <Timeline
-          title="Elixir Engineering"
-          side="right"
-          link="https://elixir-engineers.com/"
-          time="Maart 2025 - Heden"
-          color="#195A7B"
-        >
-          <p className="text-base">
-            <i className="text-red-900">Electrical Engineer</i>
-            <br />
-          </p>
-        </Timeline>
-
-        <Timeline
           title="HedoN Electronic Developments B.V."
           side="left"
           link="https://www.hedon.nl"
