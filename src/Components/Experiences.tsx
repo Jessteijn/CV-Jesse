@@ -16,7 +16,7 @@ export default function Experiences({ className }: pageProps) {
           title="HedoN Electronic Developments B.V."
           side="left"
           link="https://www.hedon.nl"
-          time="Mei 2022 - Maart 2025"
+          time="Mei 2022 - April 2025"
           color="#e17819"
         >
           <p className="text-base">
