@@ -13,7 +13,7 @@ export default function Education({ className }: pageProps) {
       <Title>Opleidingen</Title>
       <div className="text-zinc-800">
         <Item
-          time="2020 - Heden"
+          time="2020 - 2025"
           name="TU Delft (B.Sc.)"
           major="Major: Electrical Engineering"
           minor="Minor: Computer Science"
